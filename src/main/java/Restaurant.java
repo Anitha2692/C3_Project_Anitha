@@ -70,4 +70,10 @@ public class Restaurant {
         return name;
     }
 
+    public int totalOrderAmount(String itemName1, String itemName2)
+    {
+        return 0;
+    }
+
+
 }
