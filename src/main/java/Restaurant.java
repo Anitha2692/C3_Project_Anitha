@@ -72,7 +72,15 @@ public class Restaurant {
 
     public int totalOrderAmount(String itemName1, String itemName2)
     {
-        return 0;
+            Item itemToBeCalculated1 = findItemByName(itemName1);
+            int itemCost1 = itemToBeCalculated1.getPrice();
+
+            Item itemToBeCalculated2 = findItemByName(itemName2);
+            int itemCost2 = itemToBeCalculated2.getPrice();
+
+            int totalCost = itemCost1 + itemCost2;
+            return totalCost;
+
     }
 
 
